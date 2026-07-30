@@ -1,0 +1,40 @@
+﻿# Competition data
+data/
+input/
+train.csv
+test.csv
+sample_submission.csv
+
+# Submissions and predictions
+submissions/*.csv
+outputs/
+predictions/
+
+# Model artifacts
+models/
+artifacts/
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
