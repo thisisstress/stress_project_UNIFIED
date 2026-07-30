@@ -1,0 +1,2 @@
+experiment_id,version,status,model,repeated_cv_mean_mae,group_mae,public_mae,private_mae,notes
+E000,V1,baseline,Weighted Quantile ExtraTrees,0.147505,0.149202,0.1282776667,,Current team baseline

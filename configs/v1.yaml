@@ -1,0 +1,41 @@
+version: v1
+status: baseline
+target: stress_score
+metric: mae
+
+model:
+  class: ExtraTreesRegressor
+  n_estimators: 1200
+  min_samples_leaf: 1
+  max_features: 1
+  random_state: 42
+  n_jobs: 1
+
+prediction:
+  aggregation: tree_prediction_quantile
+  quantile: 0.51
+  clip_min: 0.0
+  clip_max: 1.0
+  rounding: false
+
+weighted_features:
+  copies_per_feature: 2
+  features:
+    - mean_working
+    - bmi
+    - cholesterol
+    - height
+    - glucose
+    - weight
+    - cholesterol_glucose_ratio
+    - bone_density
+
+results:
+  public_mae: 0.1282776667
+  repeated_cv_mean_mae: 0.147505
+  duplicate_group_mae: 0.149202
+
+source:
+  repository: thisisstress/stress_project_JH
+  baseline_commit: 93884c7e5f1c66cd874e70790a0b11388a94facb
+  rename_commit: 97ab711c24256e4dd84f6148ad048b59acc73824
