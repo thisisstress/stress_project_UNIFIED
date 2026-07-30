@@ -1,14 +1,14 @@
-﻿# Competition data
+# Competition data
 data/
 input/
 train.csv
 test.csv
 sample_submission.csv
 
-# Submissions and predictions
-submissions/*.csv
+# Outputs and submissions
 outputs/
 predictions/
+submissions/*.csv
 
 # Model artifacts
 models/
