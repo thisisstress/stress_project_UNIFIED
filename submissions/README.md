@@ -2,16 +2,21 @@
 
 제출 CSV는 이 폴더에 둘 수 있지만 `.gitignore`에 의해 Git에는 올라가지 않습니다.
 
-## 현재 Public 최고
+## 현재 채택 제출
+
+- 제출번호: 1507714
+- 파일명: `submit_v7_pair_neighbor_blend.csv`
+- Public MAE: 0.1272333333
+- 상태: Current Champion
+
+## 이전 최고 제출
 
 - 제출번호: 1506916
 - 파일명: `submit_v14_blend95.csv`
 - Public MAE: 0.1278085845
-- 모델: 기준 Weighted Quantile ExtraTrees 95% + 보조 예측 5%
+- 상태: Former Public Best
 
-## 기준 모델 표준 출력
-
-V1 표준 파일명은 다음과 같습니다.
+## 고정 기준 모델 출력
 
 ```text
 submit_v1_weighted_quantile_extratrees.csv
@@ -27,5 +32,6 @@ submit_v1_weighted_quantile_extratrees.csv
 - Public Score
 - Private Score
 - 실험 번호
+- 실제 제출 설정과 일치하는 검증값
 
-실제 제출 파일의 설정과 일치하는 CV만 기록합니다.
+추정 Private Score는 공식 기록에 넣지 않습니다.

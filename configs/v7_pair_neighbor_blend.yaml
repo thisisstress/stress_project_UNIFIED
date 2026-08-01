@@ -1,0 +1,59 @@
+version: v7_pair_neighbor_blend
+status: current_champion
+target: stress_score
+metric: mae
+
+submission:
+  id: 1507714
+  filename: submit_v7_pair_neighbor_blend.csv
+  submitted_at: 2026-08-01T14:43:42+09:00
+  public_mae: 0.1272333333
+  private_mae: null
+
+blend:
+  tree_weight: 0.85
+  pair_neighbor_weight: 0.15
+  round_to_decimals: 2
+  clip_min: 0.0
+  clip_max: 1.0
+
+tree_model:
+  source_version: v6
+  class: ExtraTreesRegressor
+  n_estimators: 1200
+  max_features: 1
+  random_state: 42
+  quantile: 0.52
+  feature_selection_probability: adjusted_by_feature_copies
+
+pair_neighbor:
+  neighbor_count: 1
+  distance: manhattan
+  scaling: train_empirical_rank
+  pair_count: 28
+  aggregation_quantile: 0.52
+  features:
+    - mean_working
+    - bmi
+    - cholesterol
+    - height
+    - glucose
+    - weight
+    - cholesterol_glucose_ratio
+    - bone_density
+
+validation:
+  audit3_v6_mae: 0.147019
+  audit3_v7_mae: 0.146644
+  audit3_difference: -0.000374
+  audit3_seed_wins: 3
+  audit3_seed_total: 3
+  paired_bootstrap_ci_95:
+    lower: -0.000791
+    upper: 0.000044
+
+source:
+  repository: thisisstress/stress_project_JH
+  branch: agent/model-history-v2-v4
+  report: validation/V7_MODEL_REPORT.md
+  code: final_submission_v7.py
