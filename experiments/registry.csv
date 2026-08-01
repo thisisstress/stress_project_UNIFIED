@@ -1,2 +1,5 @@
-experiment_id,version,status,model,repeated_cv_mean_mae,group_mae,public_mae,private_mae,notes
-E000,V1,baseline,Weighted Quantile ExtraTrees,0.147505,0.149202,0.1282776667,,Current team baseline
+experiment_id,version,status,model,validation_scope,validation_mae,group_mae,public_mae,private_mae,notes
+E000,V1,frozen_baseline,Weighted Quantile ExtraTrees,repeated_cv,0.147505,0.149202,0.1282776667,,Stable common comparison baseline
+E001,V14 Blend95,former_public_best,95% V1 plus 5% auxiliary blend,fixed_5fold_candidate,0.149080,,0.1278085845,,Previous public best; preserved for blend lineage
+E002,V4,rejected,Conservative Quantile ExtraTrees 50.5%,representative_train_only,0.147434,,0.1286866667,,Controlled quantile experiment
+E003,V7,current_champion,85% V6 tree plus 15% pair-neighbor,audit3,0.146644,,0.1272333333,,Audit3 3 of 3 seed wins; CI upper bound slightly above zero

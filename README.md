@@ -1,5 +1,9 @@
 # Stress Project UNIFIED
 
+<p align="center">
+  <img src="docs/assets/model_lineage.svg" alt="Stress Project model lineage" width="100%">
+</p>
+
 스트레스 점수 예측 대회의 팀 통합 실험 허브입니다.
 
 ## 모델 상태
@@ -57,7 +61,6 @@ V14는 기준 모델 95%와 다중 Seed·나이 건강 보조 예측 5%를
 
 ```text
 baseline/       고정 기준 모델 V1
-champion/       현재 채택 모델 실행 코드
 configs/        버전별 설정 기록
 docs/           실험 규칙, 리더보드, 모델 보고서
 experiments/    실험 문서와 레지스트리
@@ -88,7 +91,9 @@ pip install -r requirements.txt
 ## V1 Baseline 실행
 
 ```bash
-python3 baseline/v1_weighted_quantile_extratrees.py   --data-dir data   --output-dir outputs
+python3 baseline/v1_weighted_quantile_extratrees.py \
+  --data-dir data \
+  --output-dir outputs
 ```
 
 ## 운영 원칙
