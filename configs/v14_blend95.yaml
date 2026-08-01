@@ -1,0 +1,58 @@
+version: v14_blend95
+status: current_public_best
+target: stress_score
+metric: mae
+
+submission:
+  id: 1506916
+  filename: submit_v14_blend95.csv
+  submitted_at: 2026-07-31T14:52:53+09:00
+  public_mae: 0.1278085845
+  private_mae: null
+
+blend:
+  base_weight: 0.95
+  auxiliary_weight: 0.05
+  round_to_2_decimals: false
+  clip_min: 0.0
+  clip_max: 1.0
+
+base_model:
+  name: Weighted Quantile ExtraTrees
+  n_estimators: 1200
+  random_state: 42
+  max_features: 1
+  quantile: 0.51
+  weighted_feature_copies: 2
+
+auxiliary_model:
+  composition:
+    pooled_multiseed_weight: 0.70
+    age_health_interaction_weight: 0.30
+  pooled_multiseed:
+    seeds: [42, 77, 2026]
+    n_estimators_per_seed: 1200
+    total_trees: 3600
+    quantile: 0.505
+  age_health_interaction:
+    n_estimators: 1200
+    random_state: 42
+    quantile: 0.50
+    interaction_features:
+      - age_bmi
+      - age_glucose
+      - age_cholesterol
+      - age_bone_density
+      - age_mean_arterial_pressure
+
+validation:
+  fixed_candidate_5fold_mae: 0.149080
+  auto_selected_main_5fold_mae: 0.148953
+  auto_selected_main_base_weight: 0.80
+  auto_selected_main_auxiliary_weight: 0.20
+  note: submit_v14_blend95.csv is the fixed 95:5 unrounded candidate, not the auto-selected main candidate.
+
+source:
+  repository: thisisstress/stress_project_BS
+  notebook: stress_prediction_v14_conservative_blend.ipynb
+  commit: fef33607cb35021dae16f4be8abe108e3963ddf8
