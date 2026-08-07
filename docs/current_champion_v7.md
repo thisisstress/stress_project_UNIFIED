@@ -1,4 +1,7 @@
-# V7 Pair-Neighbor Quantile Blend — Current Champion
+# V7 Pair-Neighbor Quantile Blend — Team Lineage Milestone
+
+> 파일명 `current_champion_v7.md`은 기존 링크 호환을 위해 유지합니다.  
+> V7은 2026-08-01 당시의 팀 최고 모델이었고, 최종 발표 기준 현재 채택 모델은 **BS 8/6**입니다.
 
 ## 제출 기록
 
@@ -58,18 +61,15 @@ round(
 - 여섯 Seed에서 모두 V6보다 낮은 MAE
 - 신뢰구간 상한이 0을 아주 조금 포함한다는 한계는 유지
 
-## Public 개선
+## Public 계보
 
-| 모델 | Public MAE |
-|---|---:|
-| V1 Baseline | 0.1282776667 |
-| V14 Blend95 | 0.1278085845 |
-| V7 Pair-Neighbor Blend | **0.1272333333** |
-
-- V1 대비 절대 MAE 감소: **0.0010443334**
-- V1 대비 상대 개선: 약 **0.81%**
-- V14 대비 절대 MAE 감소: **0.0005752512**
-- V14 대비 상대 개선: 약 **0.45%**
+| 모델 | Public MAE | 역할 |
+|---|---:|---|
+| V1 Baseline | 0.1282776667 | 초기 기준점 |
+| V14 Blend95 | 0.1278085845 | 역사적 보수 블렌드 |
+| **Team V7 Pair-Neighbor Blend** | **0.1272333333** | 팀 계보 이정표 |
+| BS V34 | 0.1271866667 | 최종 통합 직전 이정표 |
+| BS 8/6 | **0.1266866667** | **최종 채택** |
 
 ## 누수 방지
 
@@ -81,8 +81,9 @@ round(
 
 ## 상태
 
-- **Current Champion**
-- 후속 모델은 V1 Baseline과 V7 Champion을 모두 비교 대상으로 사용
+- **Historical Team Lineage Milestone**
+- V7은 최종 계보에서 V34와 BS 8/6으로 이어지는 핵심 기준점으로 보존
+- 최종 채택 상태는 README와 `experiments/registry.csv`의 BS 8/6 항목을 따름
 
 ## 출처
 
