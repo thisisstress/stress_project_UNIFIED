@@ -1,10 +1,10 @@
-# V14 Blend95 — Former Public Best
+# V14 Blend95 — Historical Former Public Best
 
 ## 현재 상태
 
 V14 Blend95는 2026-07-31 당시 Public 최고였으나,
-2026-08-01 V7 Pair-Neighbor Blend가 더 낮은 Public MAE를 기록해
-현재 상태를 **Former Public Best**로 변경합니다.
+2026-08-01 V7 Pair-Neighbor Blend가 더 낮은 Public MAE를 기록하면서 **Former Public Best**가 되었습니다.
+이후 최종 발표 계보는 V7 → BS V34 → BS 8/6으로 이어졌으므로, V14는 현재 **역사적 보수 블렌딩 분기**로 보존합니다.
 
 ## 제출 기록
 
@@ -28,10 +28,13 @@ V14 Blend95는 2026-07-31 당시 Public 최고였으나,
 ## 역할
 
 - V1: Frozen Baseline
-- V7: Current Champion
-- V14: Former Public Best 및 보수적 블렌딩 계보
+- V7: Team Lineage Milestone
+- V34: BS Lineage Milestone
+- BS 8/6: Final Adopted Model
+- V14: Historical conservative-blend branch
 
-V14는 삭제하지 않고 향후 앙상블 다양성 비교 대상으로 보존합니다.
+V14는 삭제하지 않고 앙상블 다양성 및 과거 제출 계보 확인용으로 보존합니다.
+최종 발표 대표 계보 이미지는 V1 → V7 → V34 → BS 8/6만 표시합니다.
 
 ## 출처
 
