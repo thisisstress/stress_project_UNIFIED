@@ -13,11 +13,15 @@
 </p>
 
 **Weighted Quantile ExtraTrees에서 시작해 Pair-Neighbor와 Tree·Pair 공동 조정을 거쳐  
-최종 BS 8/6 통합 모델로 이어진 팀의 대표 연구 계보를 정리한 저장소입니다.**
+최종 BS 8/6 통합 모델로 이어진 팀의 대표 연구 계보를 연결·정리한 저장소입니다.**
 
 </div>
 
 ---
+
+> **UNIFIED의 역할**  
+> 이 저장소는 각 연구 저장소의 성과를 다시 소유하는 곳이 아니라, **팀에서 확인된 대표 모델·점수·원본 위치를 하나의 계보로 연결하는 공통 허브**입니다.  
+> 모델의 실제 연구·실행 원본과 provenance는 각 출처 저장소에 그대로 남기고, UNIFIED에서는 중복 복사보다 검증된 연결 관계를 보존합니다.
 
 ## 🧬 최종 발표 기준 대표 계보
 
@@ -25,7 +29,7 @@
   <img src="docs/assets/model_lineage.svg" alt="Stress Project UNIFIED final model lineage" width="100%">
 </p>
 
-> 이 계보도는 **최종 발표에 등장하는 대표 모델 중 UNIFIED의 직접 계보에 해당하는 모델만** 표시합니다.  
+> 이 계보도는 **최종 발표에 등장하는 대표 모델 중 UNIFIED에서 추적하는 팀의 주요 연결 계보**만 표시합니다.  
 > V14 Blend95, V4 Conservative Quantile과 독립 Gower 연구는 실제 연구 기록이지만 메인 발표 계보에서는 제외하고 역사 자료로 보존합니다.
 
 ---
@@ -51,8 +55,8 @@
 | 단계 | 대표 모델 | 내부 MAE | Public MAE | 역할 |
 |---|---|---:|---:|---|
 | ① | **V1 Weighted Quantile ExtraTrees** | 0.147505 | 0.1282776667 | 초기 Public 기준점 |
-| ② | **Team V7 Pair-Neighbor Blend** | 0.146644 | 0.1272333333 | 팀 최고 기준 모델 |
-| ③ | **BS V34 Tree·Pair Joint Tuning** | 0.148033 | 0.1271866667 | 최종 통합 직전 이정표 |
+| ② | **Team V7 Pair-Neighbor Blend** | 0.146644 | 0.1272333333 | 팀 계보 이정표 |
+| ③ | **BS V34 Tree·Pair Joint Tuning** | 0.148033 | 0.1271866667 | BS 최종 통합 직전 이정표 |
 | ④ | **BS 8/6 Final Integrated Model** | **0.147300** | **0.1266866667** | **최종 채택** |
 
 > **점수 해석 주의**  
@@ -68,8 +72,8 @@
 1,200개의 ExtraTree 예측을 단순 평균 대신 분위수로 집계하고, 중요한 피처가 분할 후보로 더 자주 선택되도록 feature weighting을 적용한 초기 기준 모델입니다.
 
 - Public MAE `0.1282776667`
-- UNIFIED의 frozen baseline
-- 이후 모든 직접 계보의 출발점
+- UNIFIED에 보존된 초기 frozen baseline
+- 현재 대표 연결 계보의 출발점
 
 ### 2. Team V7 — Pair-Neighbor Blend
 
@@ -77,7 +81,7 @@ ExtraTrees 전역 예측에 8개 핵심 피처의 28개 2차원 조합에서 찾
 
 - 내부 MAE `0.146644`
 - Public MAE `0.1272333333`
-- 기존 UNIFIED에서 마지막으로 반영되어 있던 팀 기준 모델
+- 팀 공통 계보의 주요 이정표
 
 세부 구조는 [`docs/current_champion_v7.md`](docs/current_champion_v7.md)에 역사 기록으로 보존합니다.
 
@@ -112,7 +116,7 @@ ExtraTrees 76%
 
 ## 🗃️ 역사적으로 보존하는 분기
 
-UNIFIED에는 최종 발표의 대표 직계 계보 외에도 당시 중요한 실험 기록을 그대로 남깁니다.
+UNIFIED에는 최종 발표의 대표 연결 계보 외에도 당시 중요한 실험 기록을 그대로 남깁니다.
 
 | 모델 | Public MAE | 현재 역할 |
 |---|---:|---|
@@ -161,6 +165,7 @@ stress_project_UNIFIED/
 - 최종 발표의 대표 모델명과 점수는 원본 Notebook 및 팀 기록과 교차 확인합니다.
 - 독립 연구 분기는 메인 계보에 억지로 합치지 않습니다.
 - 과거 모델은 삭제하지 않고 역사적 역할을 명시합니다.
+- UNIFIED의 표기는 **계보·점수·원본 위치를 연결하는 인덱스 역할**이며 각 연구 저장소의 실제 성과 소유와 provenance를 대체하지 않습니다.
 
 ---
 
