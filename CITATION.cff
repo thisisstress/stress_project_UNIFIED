@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this project, please cite all three team authors."
+message: "If you reference this project, please cite all three team authors. Citation does not grant reuse rights."
 title: "Stress Score Prediction — THIS IS STRESS"
 type: software
 authors:
@@ -13,7 +13,6 @@ version: "1.0.0"
 date-released: 2026-08-15
 repository-code: "https://github.com/thisisstress/stress_project_UNIFIED"
 url: "https://github.com/thisisstress"
-license: MIT
 keywords:
   - stress-score
   - tabular-regression
