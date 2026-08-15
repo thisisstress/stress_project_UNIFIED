@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
   <title id="title">Stress Project UNIFIED tracked team model lineage</title>
-  <desc id="desc">Representative team presentation lineage tracked in UNIFIED, from V1 Weighted Quantile ExtraTrees to Team V7 Pair-Neighbor, BS V34, and the final BS 8/6 model.</desc>
+  <desc id="desc">V1 Weighted Quantile ExtraTrees, Team V7 Pair-Neighbor, BS V34, and final BS 8/6 lineage.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#F8FAFC"/>
@@ -32,7 +32,7 @@
   <rect width="1600" height="760" rx="28" fill="url(#bg)"/>
 
   <text x="72" y="66" class="title">Stress Project UNIFIED · Tracked Team Model Lineage</text>
-  <text x="72" y="98" class="subtitle">Representative models from the final presentation connected in UNIFIED; original provenance remains with each source repository.</text>
+  <text x="72" y="98" class="subtitle">Final-presentation lineage · source provenance retained by each repository</text>
 
   <path d="M392 368 C430 368 446 368 482 368" fill="none" stroke="#94A3B8" stroke-width="4" marker-end="url(#arrow)"/>
   <path d="M752 368 C790 368 806 368 842 368" fill="none" stroke="#94A3B8" stroke-width="4" marker-end="url(#arrow)"/>
@@ -45,11 +45,11 @@
     <text x="96" y="286" class="model">V1 Weighted Quantile</text>
     <text x="96" y="315" class="model">ExtraTrees</text>
     <text x="96" y="354" class="desc">Weighted Quantile ExtraTrees</text>
-    <text x="96" y="378" class="desc">Reproducible early Public anchor</text>
+    <text x="96" y="378" class="desc">Reproducible Public anchor</text>
     <text x="96" y="429" class="scoreLabel">PUBLIC MAE</text>
     <text x="96" y="461" class="score">0.1282776667</text>
     <line x1="96" y1="482" x2="368" y2="482" stroke="#E2E8F0"/>
-    <text x="96" y="512" class="minor">Early baseline preserved in UNIFIED</text>
+    <text x="96" y="512" class="minor">Initial baseline</text>
   </g>
 
   <g filter="url(#shadow)">
@@ -96,6 +96,6 @@
   </g>
 
   <rect x="72" y="624" width="1456" height="72" rx="16" fill="#FFFFFF" stroke="#E2E8F0"/>
-  <text x="96" y="654" class="footer">Representative team presentation lineage tracked in UNIFIED · Lower Public MAE is better.</text>
-  <text x="96" y="678" class="footer">UNIFIED connects verified lineage and provenance; source repositories retain original research ownership. V14, V4, and independent Gower research remain archived.</text>
+  <text x="96" y="654" class="footer">Final-presentation lineage · lower Public MAE is better</text>
+  <text x="96" y="678" class="footer">Source provenance: original repositories · archived: V14 · V4 · independent Gower research</text>
 </svg>
