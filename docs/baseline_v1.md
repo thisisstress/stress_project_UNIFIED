@@ -10,26 +10,22 @@
 ## 모델 설정
 
 - `ExtraTreesRegressor`
-- 트리 1,200개
+- Trees: `1200`
 - `min_samples_leaf=1`
 - `max_features=1`
 - `random_state=42`
-- 개별 트리 예측의 51% 분위수 사용
-- 예측값을 0~1로 제한
-- 0.01 단위 반올림 미적용
+- Tree prediction aggregation: Q51
+- Output clip: `[0, 1]`
+- 0.01 rounding: 미적용
 
 ## 파생변수
 
-- BMI
-- 맥압
-- 평균동맥압
-- 혈압 비율
-- 콜레스테롤·혈당 비율
-- 행별 결측치 개수
+BMI · 맥압 · 평균동맥압 · 혈압 비율 · 콜레스테롤/혈당 비율 · 행별 결측치 수
 
 ## 중요 피처 가중
 
-`mean_working`, BMI, 콜레스테롤, 키, 혈당, 체중, 콜레스테롤·혈당 비율, 골밀도마다 복제본 2개를 추가합니다.
+`mean_working` · BMI · 콜레스테롤 · 키 · 혈당 · 체중 · 콜레스테롤/혈당 비율 · 골밀도  
+각 피처 복제본 2개 → ExtraTrees 분할 후보 선택 확률 조정
 
 ## 검증 결과
 
@@ -41,4 +37,5 @@
 
 ## 명칭 주의
 
-당시 제출 파일에는 `repeated_cv`가 포함됐지만 최종 Test 예측은 반복 CV 모델의 앙상블이 아닙니다. 전체 Train으로 학습한 단일 ExtraTrees 모델 안의 1,200개 트리 예측을 51% 분위수로 집계합니다.
+**Filename `repeated_cv` ≠ repeated-CV test ensemble.**  
+최종 Test 예측: 전체 Train 학습 단일 ExtraTrees · 1,200 tree predictions · Q51 aggregation.
