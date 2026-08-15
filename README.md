@@ -88,6 +88,9 @@ round to 0.01 · clip [0, 1]
 
 ## License, attribution and citation
 
-팀이 작성한 소스 코드와 문서는 [MIT License](LICENSE)로 공개합니다. 공동 저자와 역할은 [AUTHORS.md](AUTHORS.md), 데이터·제3자 자료의 제외 범위는 [LICENSE_SCOPE.md](LICENSE_SCOPE.md)에서 확인할 수 있습니다.
+**Public view · no public reuse license.**  
+팀 제작 코드·문서·원본 도식은 All Rights Reserved. 별도 서면 허가 없는 재사용·수정·재배포 불가.
 
-연구 또는 프로젝트에서 이 결과를 활용할 때에는 GitHub의 **Cite this repository** 메뉴가 제공하는 [`CITATION.cff`](CITATION.cff) 정보를 사용해 세 팀원을 함께 인용해 주세요.
+공동 저자와 역할: [AUTHORS.md](AUTHORS.md) · 권리 범위와 제3자 자료: [LICENSE](LICENSE) · [LICENSE_SCOPE.md](LICENSE_SCOPE.md)
+
+인용 정보: [`CITATION.cff`](CITATION.cff)
