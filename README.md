@@ -84,4 +84,10 @@ round to 0.01 · clip [0, 1]
 - [`docs/current_champion_v7.md`](docs/current_champion_v7.md) — V7 상세
 - [`experiments/registry.csv`](experiments/registry.csv) — 실험 목록
 
-대회 데이터는 저장소에 포함하지 않습니다.
+대회 원본 `train.csv`·`test.csv`와 정답 레이블은 저장소에 포함하지 않습니다.
+
+## License, attribution and citation
+
+팀이 작성한 소스 코드와 문서는 [MIT License](LICENSE)로 공개합니다. 공동 저자와 역할은 [AUTHORS.md](AUTHORS.md), 데이터·제3자 자료의 제외 범위는 [LICENSE_SCOPE.md](LICENSE_SCOPE.md)에서 확인할 수 있습니다.
+
+연구 또는 프로젝트에서 이 결과를 활용할 때에는 GitHub의 **Cite this repository** 메뉴가 제공하는 [`CITATION.cff`](CITATION.cff) 정보를 사용해 세 팀원을 함께 인용해 주세요.
