@@ -26,8 +26,19 @@
 | Private MAE | **0.1473** |
 | 최종 블렌드 | **ExtraTrees 76% + Pair-Neighbor 24%** |
 
-**채택 기준:** Public 단독 최적화 제외 · 내부 검증 · Private 결과 · 재현 가능한 실행 계약  
-**Fresh V6:** Public `0.1265` · 동등 수준 검증 기록 부재 · 미채택
+**최종 보고 기준:** Public 단독 점수만으로 우열을 주장하지 않으며 내부 검증 · Private 결과 · 재현 가능한 실행 계약을 함께 기록  
+**Fresh V6:** Public `0.1265`가 관측됐지만 동등한 내부/Private 검증·재현 계약이 확보되지 않아 canonical final에서 제외
+
+### 점수 해석
+
+| 비교 기준 | Public MAE | 최종 대비 ΔMAE | 상대 MAE 감소 |
+|---|---:|---:|---:|
+| V1 initial baseline anchor | `0.1282776667` | `-0.0015910` | 약 **1.24%** |
+| V14 historical public reference | `0.1278085845` | `-0.0011219` | 약 **0.88%** |
+| Team V7 lineage milestone | `0.1272333333` | `-0.0005467` | 약 **0.43%** |
+
+**해석 규칙:** “0.9% 성능 향상”처럼 기준 없는 퍼센트 표현은 사용하지 않습니다. V14 대비라면 “Public MAE 0.12781 → 0.12669, 약 0.88% 상대 감소”처럼 기준과 원 점수를 함께 적습니다.  
+세부 기준: [`docs/EVALUATION_NOTES.md`](docs/EVALUATION_NOTES.md)
 
 **Canonical Notebook**  
 [`stress_project_BS/8_6/stress_prediction_combined_final_0806_1.ipynb`](https://github.com/thisisstress/stress_project_BS/blob/main/8_6/stress_prediction_combined_final_0806_1.ipynb)
@@ -77,12 +88,13 @@ round to 0.01 · clip [0, 1]
 |---|---|
 | [`stress_project_BS`](https://github.com/thisisstress/stress_project_BS) | 최종 BS 8/6 · ExtraTrees/Pair-Neighbor |
 | [`stress_project_JH`](https://github.com/thisisstress/stress_project_JH) | V7 Pair-Neighbor · 재현 코드 |
-| `stress_project_SK` | 대안 모델 · UQC/Gower · 강건성 검증 |
+| `stress_project_SK` *(private)* | 대안 모델 · UQC/Gower · 후속 내부 R&D |
 
 **SK boundary:** 팀 최종 모델과 별도 연구축. 공식 발표 기준은 UNIFIED + BS 8/6.
 
 ## Reference
 
+- [`docs/EVALUATION_NOTES.md`](docs/EVALUATION_NOTES.md) — 점수 해석 · 비교 가능 범위 · 한계
 - [`docs/leaderboard.md`](docs/leaderboard.md) — 제출 점수 · 대표 계보
 - [`docs/baseline_v1.md`](docs/baseline_v1.md) — V1 기준 모델
 - [`docs/current_champion_v7.md`](docs/current_champion_v7.md) — V7 계보 이정표
