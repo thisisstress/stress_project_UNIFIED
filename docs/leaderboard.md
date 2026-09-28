@@ -22,7 +22,7 @@
 | V14 historical public reference | 0.1278085845 | 0.1266866667 | -0.0011219 | 약 0.88% |
 | Team V7 lineage milestone | 0.1272333333 | 0.1266866667 | -0.0005467 | 약 0.43% |
 
-**표현 규칙:** 기준 모델을 생략한 “0.9% 성능 향상”은 사용하지 않음. 약 0.88%는 V14 historical public reference를 명시했을 때만 유효하며, canonical baseline은 V1, 후반 팀 계보 기준점은 V7로 구분함.
+**표현 규칙:** 기준 모델을 생략한 단일 퍼센트 향상 표현은 사용하지 않음. 약 0.88%는 V14 historical public reference를 명시했을 때만 유효하며, canonical baseline은 V1, 후반 팀 계보 기준점은 V7로 구분함.
 
 세부 해석 기준: [EVALUATION_NOTES.md](EVALUATION_NOTES.md)
 
