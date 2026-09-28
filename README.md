@@ -27,7 +27,7 @@
 | 최종 블렌드 | **ExtraTrees 76% + Pair-Neighbor 24%** |
 
 **최종 보고 기준:** Public 단독 점수만으로 우열을 주장하지 않으며 내부 검증 · Private 결과 · 재현 가능한 실행 계약을 함께 기록  
-**Fresh V6:** Public `0.1265`가 관측됐지만 동등한 내부/Private 검증·재현 계약이 확보되지 않아 canonical final에서 제외
+미채택 탐색 후보와 최종 모델 선정 근거는 [`docs/EVALUATION_NOTES.md`](docs/EVALUATION_NOTES.md)에 분리해 기록합니다.
 
 ### 점수 해석
 
