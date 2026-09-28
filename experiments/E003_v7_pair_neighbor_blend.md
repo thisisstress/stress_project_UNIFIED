@@ -1,4 +1,4 @@
-# E003 V7 Pair-Neighbor Quantile Blend
+# E003 V7 Pair-Neighbor Quantile Blend — Historical Team Milestone
 
 ## 목적
 
@@ -22,23 +22,27 @@ round(
 
 ## 검증
 
-| 구간 | V6 | V7 | 개선 |
+| 구간 | V6 | V7 | ΔMAE |
 |---|---:|---:|---:|
 | Development Seed 42 | 0.151283 | 0.150560 | -0.000723 |
 | Development 확인 Seed | 0.146502 | 0.146205 | -0.000297 |
 | Audit3 | 0.147019 | 0.146644 | -0.000374 |
 
 - Audit3 Seed 승률: 3/3
-- Audit3 쌍대 95% CI: [-0.000791, +0.000044]
+- Audit3 paired 95% CI: `[-0.000791, +0.000044]`
+- CI가 0을 포함하므로 내부 검증 불확실성을 함께 보존
 
 ## 제출 결과
 
-- 제출번호: 1507714
+- 제출번호: `1507714`
 - Public MAE: **0.1272333333**
-- V1 대비 약 0.81% 개선
-- V14 대비 약 0.45% 개선
+- V1 `0.1282776667` 대비 약 **0.81% 상대 MAE 감소**
+- V14 `0.1278085845` 대비 약 **0.45% 상대 MAE 감소**
 
-## 결론
+## 현재 계보상 상태
 
-- 상태: **Current Champion**
-- V1은 Frozen Baseline으로 유지
+- V7: **Historical team-lineage milestone**
+- V1: Frozen initial baseline anchor
+- Current team final: **BS 8/6 — Public MAE 0.1266866667 · Private MAE 0.1473**
+
+현재 상태와 비교 규칙은 [Evaluation Notes](../docs/EVALUATION_NOTES.md)를 따릅니다.
